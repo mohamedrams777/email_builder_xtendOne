@@ -1,0 +1,76 @@
+<div class="email-component button-component" data-type="button">
+    <div class="component-toolbar">
+        <button class="edit-btn" title="Edit"><i class="fas fa-edit"></i></button>
+        <button class="delete-btn" title="Delete"><i class="fas fa-trash"></i></button>
+        <button class="move-up-btn" title="Move Up"><i class="fas fa-arrow-up"></i></button>
+        <button class="move-down-btn" title="Move Down"><i class="fas fa-arrow-down"></i></button>
+    </div>
+    <div class="component-content">
+        <div style="text-align: center; padding: 20px 0;">
+            <a href="#" style="background-color: #3498db; color: white; padding: 12px 30px; text-decoration: none; display: inline-block; border-radius: 4px; font-family: Arial, sans-serif; font-weight: bold; font-size: 16px;">
+                Click Here
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Button Component Template Properties -->
+<template id="button-template-props">
+    <div class="property-group">
+        <h4>Button Settings</h4>
+        <div class="form-group">
+            <label>Button Text</label>
+            <input type="text" class="button-text" placeholder="Enter button text" value="Click Here">
+        </div>
+        <div class="form-group">
+            <label>Button URL</label>
+            <input type="text" class="button-url" placeholder="https://example.com" value="#">
+        </div>
+        <div class="form-group">
+            <label>Alignment</label>
+            <select class="button-alignment">
+                <option value="left">Left</option>
+                <option value="center" selected>Center</option>
+                <option value="right">Right</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Background Color</label>
+            <div class="color-picker">
+                <input type="color" class="button-bg-color" value="#3498db">
+                <input type="text" class="button-bg-color-text" value="#3498db">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Text Color</label>
+            <div class="color-picker">
+                <input type="color" class="button-text-color" value="#ffffff">
+                <input type="text" class="button-text-color-text" value="#ffffff">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Font Size</label>
+            <input type="text" class="button-font-size" placeholder="e.g., 16px" value="16px">
+        </div>
+        <div class="form-group">
+            <label>Padding</label>
+            <input type="text" class="button-padding" placeholder="e.g., 12px 30px" value="12px 30px">
+        </div>
+        <div class="form-group">
+            <label>Border Radius</label>
+            <input type="text" class="button-border-radius" placeholder="e.g., 4px" value="4px">
+        </div>
+        <div class="form-group">
+            <label>Font Family</label>
+            <select class="button-font-family">
+                <option value="Arial, sans-serif" selected>Arial</option>
+                <option value="'Helvetica Neue', sans-serif">Helvetica</option>
+                <option value="Georgia, serif">Georgia</option>
+                <option value="'Times New Roman', serif">Times New Roman</option>
+            </select>
+        </div>
+        <button class="btn btn-primary update-button-btn" style="width: 100%;">
+            <i class="fas fa-check"></i> Update Button
+        </button>
+    </div>
+</template>

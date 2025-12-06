@@ -1,0 +1,92 @@
+<div class="email-component image-component" data-type="image">
+    <div class="component-toolbar">
+        <button class="edit-btn" title="Edit"><i class="fas fa-edit"></i></button>
+        <button class="delete-btn" title="Delete"><i class="fas fa-trash"></i></button>
+        <button class="move-up-btn" title="Move Up"><i class="fas fa-arrow-up"></i></button>
+        <button class="move-down-btn" title="Move Down"><i class="fas fa-arrow-down"></i></button>
+    </div>
+    <div class="component-content">
+        <div style="text-align: center;">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300&q=80" 
+                 alt="Sample Image" 
+                 style="width: 100%; max-width: 100%; height: auto;">
+        </div>
+    </div>
+</div>
+
+<!-- Image Component Template Properties -->
+<template id="image-template-props">
+    <div class="property-group">
+        <h4>Image Settings</h4>
+        <div class="form-group">
+            <label>Image URL</label>
+            <input type="text" class="image-src" 
+                   placeholder="https://example.com/image.jpg" 
+                   value="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300&q=80">
+            <small style="color: #666; font-size: 12px; margin-top: 5px; display: block;">
+                Tip: Use Unsplash for free images: https://unsplash.com
+            </small>
+        </div>
+        <div class="form-group">
+            <label>Alternative Text</label>
+            <input type="text" class="image-alt" placeholder="Description of image" value="Sample Image">
+        </div>
+        <div class="form-group">
+            <label>Width</label>
+            <select class="image-width">
+                <option value="100%">Full Width</option>
+                <option value="80%">80% Width</option>
+                <option value="60%">60% Width</option>
+                <option value="50%">Half Width</option>
+                <option value="40%">40% Width</option>
+                <option value="300px">300px</option>
+                <option value="200px">200px</option>
+                <option value="150px">150px</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Alignment</label>
+            <select class="image-alignment">
+                <option value="left">Left</option>
+                <option value="center" selected>Center</option>
+                <option value="right">Right</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Link URL (optional)</label>
+            <input type="text" class="image-linkUrl" placeholder="https://example.com" value="#">
+        </div>
+        <div class="form-group">
+            <label>Border</label>
+            <select class="image-border">
+                <option value="none" selected>No Border</option>
+                <option value="1px solid #ccc">Thin Gray Border</option>
+                <option value="2px solid #ccc">Medium Gray Border</option>
+                <option value="1px solid #000">Thin Black Border</option>
+                <option value="2px solid #3498db">Blue Border</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Border Radius</label>
+            <select class="image-borderRadius">
+                <option value="0px" selected>No Radius</option>
+                <option value="5px">Small Radius (5px)</option>
+                <option value="10px">Medium Radius (10px)</option>
+                <option value="15px">Large Radius (15px)</option>
+                <option value="50%">Circle (50%)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Image Preview</label>
+            <div class="image-preview" style="margin-top: 10px; padding: 10px; border: 1px dashed #ccc; text-align: center;">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                     alt="Preview" 
+                     style="max-width: 100%; height: auto;">
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Image preview will update after saving</p>
+            </div>
+        </div>
+        <button class="btn btn-primary update-image-btn" style="width: 100%;">
+            <i class="fas fa-check"></i> Update Image
+        </button>
+    </div>
+</template>

@@ -1,0 +1,69 @@
+{
+  "templates": [
+    {
+      "id": "empty",
+      "name": "Empty",
+      "description": "Start from scratch with a blank canvas",
+      "icon": "file",
+      "category": "basic"
+    },
+    {
+      "id": "welcome",
+      "name": "Welcome email",
+      "description": "Welcome new users to your platform",
+      "icon": "hand-wave",
+      "category": "onboarding"
+    },
+    {
+      "id": "otp",
+      "name": "One-time passcode (OTP)",
+      "description": "Send authentication codes to users",
+      "icon": "key",
+      "category": "security"
+    },
+    {
+      "id": "reset-password",
+      "name": "Reset password",
+      "description": "Password reset instructions",
+      "icon": "redo",
+      "category": "security"
+    },
+    {
+      "id": "ecommerce",
+      "name": "E-commerce receipt",
+      "description": "Order confirmation and receipts",
+      "icon": "receipt",
+      "category": "commerce"
+    },
+    {
+      "id": "subscription",
+      "name": "Subscription receipt",
+      "description": "Subscription payment confirmation",
+      "icon": "calendar-check",
+      "category": "commerce"
+    },
+    {
+      "id": "reservation",
+      "name": "Reservation reminder",
+      "description": "Appointment and reservation reminders",
+      "icon": "calendar-alt",
+      "category": "notifications"
+    },
+    {
+      "id": "metrics",
+      "name": "Post metrics",
+      "description": "Performance reports and analytics",
+      "icon": "chart-line",
+      "category": "analytics"
+    },
+    {
+      "id": "inquiry",
+      "name": "Respond to Inquiry",
+      "description": "Customer service responses",
+      "icon": "comment-dots",
+      "category": "support"
+    }
+  ],
+  "version": "2.0.0",
+  "lastUpdated": "2024-01-15"
+}
